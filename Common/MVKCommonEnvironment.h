@@ -138,7 +138,7 @@ extern "C" {
  * Disabled by default.
  */
 #ifndef MVK_USE_METAL_PRIVATE_API
-#	define MVK_USE_METAL_PRIVATE_API		0
+#	define MVK_USE_METAL_PRIVATE_API		1
 #endif
 
 /** Directive to identify public symbols. */
