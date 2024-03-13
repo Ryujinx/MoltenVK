@@ -2479,6 +2479,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"SPIRV_CROSS_NAMESPACE_OVERRIDE=MVK_spirv_cross",
+					"MVK_FRAMEWORK_VERSION=${CURRENT_PROJECT_VERSION}",
+					"MVK_USE_METAL_PRIVATE_API=1",
+				);
 				LD_DYLIB_INSTALL_NAME = "@rpath/lib${PRODUCT_NAME}.dylib";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -2492,6 +2498,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"SPIRV_CROSS_NAMESPACE_OVERRIDE=MVK_spirv_cross",
+					"MVK_FRAMEWORK_VERSION=${CURRENT_PROJECT_VERSION}",
+					"MVK_USE_METAL_PRIVATE_API=1",
+				);
 				LD_DYLIB_INSTALL_NAME = "@rpath/lib${PRODUCT_NAME}.dylib";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -2518,6 +2530,11 @@
 		A9CBEDFF1B6299D800E45FDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"SPIRV_CROSS_NAMESPACE_OVERRIDE=MVK_spirv_cross",
+					"MVK_FRAMEWORK_VERSION=${CURRENT_PROJECT_VERSION}",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
